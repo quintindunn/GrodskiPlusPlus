@@ -1,0 +1,21 @@
+{    "manifest_version": 3,
+    "name": "Grodski++",
+    "version": "0.1",
+    "description": "Make Mr. Grodski's site a bit better, removing the unruly loading screen, and more to come!",
+    "action": {
+    },
+    "content_scripts": [
+        {
+        "matches": ["http://mrgrodskichemistry.com/*", "https://mrgrodskichemistry.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "512": "512x512.png"
+    },
+    "offline_enabled": true,
+	"host_permissions": [
+		"http://mrgrodskichemistry.com/*",
+        "https://mrgrodskichemistry.com/*"
+	]
+}
